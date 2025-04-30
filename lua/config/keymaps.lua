@@ -4,3 +4,4 @@
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { noremap = true })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true })
+vim.keymap.set('t', '<C-q>', [[<C-\><C-n>:q<CR>]], { desc = "Close terminal" })
