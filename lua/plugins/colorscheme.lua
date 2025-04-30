@@ -3,7 +3,7 @@ return {
   -- { "ellisonleao/gruvbox.nvim" },
 
   {
-    "catpruccin/nvim",
+    "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
   },
