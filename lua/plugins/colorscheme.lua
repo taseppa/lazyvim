@@ -7,6 +7,7 @@ return {
     lazy = true,
     name = "catppuccin",
   },
+  { "rose-pine/neovim", name = "rose-pine" },
   {
     "LazyVim/LazyVim",
     opts = {
