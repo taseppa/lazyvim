@@ -23,4 +23,31 @@ return {
       },
     },
   },
+  {
+    "folke/snacks.nvim",
+    keys = {
+      -- Top Pickers & Explorer
+      {
+        "<leader><space>",
+        function()
+          Snacks.picker.buffers({ current = false })
+        end,
+        desc = "Smart Find Files",
+      },
+      {
+        "<leader>,",
+        function()
+          Snacks.picker.files()
+        end,
+        desc = "Buffers",
+      },
+      {
+        "<leader>.",
+        function()
+          Snacks.picker.grep()
+        end,
+        desc = "Buffers",
+      },
+    },
+  },
 }
