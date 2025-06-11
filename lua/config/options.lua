@@ -5,6 +5,7 @@
 vim.g.snacks_animate = false
 vim.g.ai_cmp = false
 
+vim.o.guifont = "JetBrainsMono:h12"
 vim.g.neovide_frame = "none"
 vim.g.neovide_position_animation_length = 0
 vim.g.neovide_cursor_animation_length = 0.00
