@@ -25,6 +25,12 @@ return {
   },
   {
     "folke/snacks.nvim",
+    opts = {
+      zen = {
+        toggles = { dim = false, git_signs = false, mini_diff_signs = false },
+        win = { width = 200, backdrop = { transparent = false, blend = 99 } },
+      },
+    },
     keys = {
       -- Top Pickers & Explorer
       {
@@ -47,6 +53,17 @@ return {
           Snacks.picker.grep()
         end,
         desc = "Buffers",
+      },
+    },
+  },
+  {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "marilari88/neotest-vitest",
+    },
+    opts = {
+      adapters = {
+        ["neotest-vitest"] = {},
       },
     },
   },
