@@ -4,8 +4,9 @@
 -- Set to `false` to globally disable all snacks animations
 vim.g.snacks_animate = false
 vim.g.ai_cmp = false
+vim.o.background = "dark"
 
-vim.o.guifont = "JetBrainsMono:h12"
+vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 vim.g.neovide_frame = "none"
 vim.g.neovide_position_animation_length = 0
 vim.g.neovide_cursor_animation_length = 0.00
