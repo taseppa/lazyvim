@@ -30,6 +30,16 @@ return {
         toggles = { dim = false, git_signs = false, mini_diff_signs = false },
         win = { width = 200, backdrop = { transparent = false, blend = 99 } },
       },
+      picker = {
+        win = {
+          input = {
+            keys = {
+              ["<PageUp>"] = { "preview_scroll_up", mode = { "i", "n" } },
+              ["<PageDown>"] = { "preview_scroll_down", mode = { "i", "n" } },
+            },
+          },
+        },
+      },
     },
     keys = {
       -- Top Pickers & Explorer
