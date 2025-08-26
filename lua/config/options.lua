@@ -5,6 +5,11 @@
 vim.g.snacks_animate = false
 vim.g.ai_cmp = false
 vim.o.background = "dark"
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    vim.opt.formatoptions:remove({ "o", "r" })
+  end,
+})
 
 vim.o.guifont = "JetBrainsMono Nerd Font:h12"
 vim.g.neovide_frame = "none"
