@@ -1,9 +1,18 @@
 return {
   {
     "zbirenbaum/copilot.lua",
+    enabled = false,
     cmd = "Copilot",
     build = ":Copilot auth",
     event = "BufReadPost",
+    dependencies = {
+      {
+        "copilotlsp-nvim/copilot-lsp",
+        init = function()
+          vim.g.copilot_nes_debounce = 500
+        end,
+      },
+    },
     opts = {
       suggestion = {
         -- enabled = not vim.g.ai_cmp,
@@ -14,6 +23,14 @@ return {
           accept = false, -- handled by nvim-cmp / blink.cmp
           next = "<M-n>",
           prev = "<M-p>",
+        },
+      },
+      nes = {
+        enabled = true,
+        keymap = {
+          accept_and_goto = "<leader>p",
+          accept = false,
+          dismiss = "<Esc>",
         },
       },
       panel = { enabled = false },
